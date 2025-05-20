@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hướng dẫn sử dụng</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- 1. Thanh điều hướng cố định -->
+  <nav class="navbar">
+    <ul class="menu">
+      <li class="menu-item">
+        <a href="#">Hệ Thống</a>
+        <ul class="submenu">
+          <li><a href="#" data-src="docs/[2025]KeHoachDoAn_23PM.pdf">Đăng nhập</a></li>
+          <li><a href="#" data-src="docs/doc2.pdf">Đăng xuất</a></li>
+          <li><a href="#" data-src="docs/doc2.pdf">Đổi mật khẩu</a></li>
+          <li><a href="#" data-src="docs/doc2.pdf">Thoát</a></li>
+        </ul>
+      </li>
+      <li class="menu-item">
+        <a href="#">Quản lý</a>
+        <ul class="submenu">
+          <li><a href="#" data-src="docs/doc1.pdf">Sách</a></li>
+          <li><a href="#" data-src="docs/doc2.pdf">Nhà xuất bản</a></li>
+          <li><a href="#" data-src="docs/doc1.pdf">Thể loại</a></li>
+          <li><a href="#" data-src="docs/doc2.pdf">Nhân viên</a></li>
+          <li><a href="#" data-src="docs/doc1.pdf">Độc giả</a></li>
+          <li><a href="#" data-src="docs/doc2.pdf">Mượn trả sách</a></li>
+        </ul>
+      </li>
+      <li class="menu-item">
+        <a href="#">Thống kê</a>
+        <ul class="submenu">
+          <li><a href="#" data-src="docs/doc1.pdf">Thống kê sách</a></li>
+          <li><a href="#" data-src="docs/doc2.pdf">Thống kê mượn trả</a></li>
+        </ul>
+      </li>
+      <li class="menu-item">
+        <a href="#">Trợ giúp</a>
+        <ul class="submenu">
+          <li><a href="#" data-src="docs/doc1.pdf">Hướng dẫn sử dụng</a></li>
+          <li><a href="#" data-src="docs/doc2.pdf">Mẫu nhập dữ liệu Excel</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- 2. Vùng hiển thị PDF/FDF và fallback download -->
+<div class="viewer">
+  <iframe id="pdfViewer" src="" width="100%" height="800px"></iframe>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>

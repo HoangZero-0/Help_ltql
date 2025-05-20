@@ -1,0 +1,83 @@
+/* Reset cơ bản */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Navbar cố định */
+  .navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 50px; 
+  background: #333;
+  z-index: 1000;
+}
+
+.navbar .menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; 
+}
+
+.navbar .menu-item > a {
+  display: block;
+  padding: 1rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+  /* Dropdown submenu */
+  .submenu {
+    position: absolute;
+    list-style: none;
+    background: #444;
+    display: none;
+    min-width: 150px;
+  }
+  .menu-item:hover .submenu {
+    display: block;
+  }
+  .submenu li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    text-decoration: none;
+  }
+  .submenu li a:hover {
+    background: #555;
+  }
+  
+  /* Viewer và iframe */
+.viewer {
+  margin-top: 50px; 
+  height: calc(100vh - 50px);
+}
+
+  #pdfViewer {
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Fallback download link */
+  .download-container {
+    display: none;
+    text-align: center;
+    margin-top: 0.5rem;
+    background: #f8f9fa;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 0.25rem;
+  }
+  .download-container a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+  }
+  .download-container a:hover {
+    text-decoration: underline;
+  }
+  
