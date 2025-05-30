@@ -1,8 +1,14 @@
-document.querySelectorAll('a[data-src]').forEach(link => {
+document.addEventListener('DOMContentLoaded', function () {
+  const viewer = document.getElementById('pdfViewer');
+
+  // Tải mặc định là home.html
+  viewer.src = 'home.html';
+
+  document.querySelectorAll('a[data-src]').forEach(link => {
     link.addEventListener('click', function (e) {
       e.preventDefault();
-      const pdfPath = this.getAttribute('data-src');
-      const viewer = document.getElementById('pdfViewer');
-      viewer.src = pdfPath;
+      const src = this.getAttribute('data-src');
+      viewer.src = src;
     });
   });
+});
